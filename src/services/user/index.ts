@@ -1,6 +1,3 @@
-import { query } from "./../../db";
+import { pool } from "@/db/pool";
 
-export async function getUserById(id: string) {
-  const user = await query(`select * from user where id=${id}`);
-  return user;
-}
+export async function getUserById(id: string) {}
